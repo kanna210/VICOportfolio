@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated List Items</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d1e8eb;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .animated-list {
+            list-style: square;
+            padding: 0;
+            text-align: left;
+            font-size: 1.5em;
+        }
+
+        .animated-list li {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<ul class="animated-list">
+    <h1>SAKANA family's rule</h1>
+        <li>You must wash your hands when comes home.</li>
+        <li>You must thank the food and a cook.</li>
+        <li>You should not take anythig for granted. <br>Be thankful for everything.</li>
+        <li>You should be honest.</li>
+        <li>You should work hard but not too hard.</li>
+        <li>You must attend the mothly meeting.</li>
+</ul>
+
+</body>
+</html>
